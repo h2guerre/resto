@@ -7,7 +7,7 @@ mot de passe : 1234
 reference de la base de donnée
 nom de la base de donnée : resto
 nom de la table : produit
-nom utilisateur : H2guerre
-mot de passe : 51535759
+nom utilisateur : root
+mot de passe : root
 
 lien github : https://github.com/h2guerre/resto.git
