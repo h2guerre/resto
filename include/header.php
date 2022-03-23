@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col col-sm col-md text">
                     <h1 class="titre1">LE RESTAURANT</h1>
-                    <h1 class="titre">MyResto</h1>
+                    <h1 class="titre">ALDO</h1>
                 </div>
             </div>
         </div>
