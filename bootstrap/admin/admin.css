@@ -1,0 +1,308 @@
+@font-face 
+{
+    font-family: 'title';
+    src: url('../font/Cookie-Regular.ttf');
+}
+*
+{  
+  
+    font-family:initial;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+nav
+{
+  
+    padding: 20px;
+    height: 100vh;
+    box-shadow:0px 1px 3px 0px #00000038;
+}
+nav ul
+{
+    list-style: none;
+    padding: 0;
+}
+nav h1
+{
+    width: 100%;
+    text-align: center; 
+    font-size: 30px;  
+}
+nav ul li
+{
+    text-align: center;
+    margin-top: 35px; 
+    font-weight: bolder;
+}
+nav ul li a
+{
+    padding: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.781);
+    
+}
+nav ul li a:hover
+{
+    background-color: rgba(220, 20, 60, 0.486);
+    color:rgba(0, 0, 0, 0.781);
+}
+nav ul li a.active
+{
+    background-color: rgba(220, 20, 60, 0.486);
+}
+
+.content
+{
+    background: url('../img/dessert-g3aabe8189_1920.jpg');
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding:0px;
+    margin: 0;
+}
+
+.content section
+{
+    
+    position: absolute;
+    height: 100%;   
+    width: 95%; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    opacity: 0;
+    z-index: -1;
+}
+section.active
+{
+    opacity: 1;
+    z-index: 1;
+  
+}
+section.add_pr form
+{
+   width:400px;
+   margin: 20px auto;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 20px;
+}
+section.add_pr form h1
+{
+    text-align: center;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 30px;
+}
+section.add_pr form p.err
+{
+    color:red;
+}
+section.add_pr form p button
+{
+    width: 100%;
+}
+
+.liste
+{
+    background-color:#fff;
+    padding: 20px;
+}
+.liste h1
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: initial;
+}
+.items
+{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;   
+}
+
+
+
+
+
+
+
+
+.card
+{
+    width: 180px;
+    height: 240px;
+    position: relative;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.card img
+{
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.card p.title
+{
+    text-align: center;
+    font-weight: bold;
+}
+.card p.info_pr
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+   ;
+}
+.card .info_pr span
+{
+    display: inline-block;
+
+}
+.card .btns
+{
+    display: flex;
+  
+}
+.card .btns button
+{
+    margin-left: 5px;
+}
+.card .btns button a
+{
+   color: #fff;
+}
+
+p.success
+{
+    opacity: 0;
+}
+
+
+
+section#up form
+{
+   width:400px;
+   margin: 20px auto;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 20px;
+}
+section#up form h1
+{
+    text-align: center;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 30px;
+}
+section#up form p.err
+{
+    color:red;
+}
+section#up form p button
+{
+    width: 100%;
+}
+section#up p.success_m
+{
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+}
+
+p.success_mod
+{
+    
+    font-weight: bold;
+    text-align: center;
+}
+p.sh
+{
+    
+    background-color: rgba(0, 128, 0, 0.418);
+    text-align: center;
+    color:green;
+    opacity: 1;
+    padding: 8px;
+    font-weight: bold;
+}
+p.show
+{
+  
+    text-align: center;
+    opacity: 1;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.search
+{
+    background-color: rgba(0, 0, 0, 0.781);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+form.connect
+
+{
+   width: 350px;
+   border: 1px solid rgba(0, 0, 0, 0.418);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   padding: 20px;
+   border-radius: 20px;
+}
+form.connect h1
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;   
+}
+
+form.connect label
+{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.568);
+   
+}
+form.connect button
+{
+    margin-top: 10px;
+    width: 100%;
+}
+form.connect .btn
+{
+    font-weight: bold;
+}
+
+@media all and (max-width:750px)
+{
+    nav
+    {
+        background-color: red;
+    }
+}
