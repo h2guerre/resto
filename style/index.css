@@ -1,0 +1,594 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../inspi/photos/consis/consis12.webp);
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+header ul {
+    position: absolute;
+    width: 72%;
+    padding: 1%;
+    margin: 1%;
+    list-style: none;
+    top: 7%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+header ul li{
+    margin:2%;
+}
+header ul li a{
+    padding:0.5%;
+    color: lightcyan;
+    text-decoration: none;
+    border-bottom: 1px solid bisque;
+    font-size: 120%;
+    align-items: center;
+    text-align:center;
+}
+header ul li a:hover {
+    border-bottom-color: chartreuse;
+    transform: scale(1.3);
+    color: chartreuse;
+}
+.sous{
+    position: absolute;
+    display: none;
+    background-color: rgba(56, 58, 59, 0.671);
+    top: 10px;
+    left: 15%;
+    z-index: 10;
+    width: 120px;
+    padding: 1%;
+}
+.hnav > ul li:hover .sous{
+    display: flex;
+    flex-direction: column;
+
+} 
+.hnav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: justify;
+    padding: 1%;
+}
+.sous a {
+    position: relative;
+    text-decoration: none;
+    border-bottom: none;
+    top: 40%;
+    left: -100%;
+    
+}
+.sous a:hover {
+    text-decoration: underline;
+}
+.deroul > a::after{
+    content: "->";
+    font-size: 100%;
+}
+
+.rech {
+    width: 90%;
+    position: absolute;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    top: 1%;
+    padding: 1%;
+}
+.rech input{
+    border: 5px solid bisque;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 5px 40px 5px 10px;
+    width: 1%;
+    transition: width 400ms
+    cubic-bezier(0.5, -0.5, 0.5, 1.5) 400ms;
+}
+.rech input:focus{
+    outline: none;
+    width: 200px;
+
+}
+.fa-search{
+    position:relative;
+    right: 30px;
+    top: 3px;
+    font-size: 150%;
+}
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.titre{
+    position:fixed;
+    color:bisque;
+    font-size: 250%;
+    left: 10%;
+    bottom: 23%;
+    text-decoration:underline;
+}
+.titre1{
+    position:fixed;
+    color:rgb(255, 255, 255);
+    font-size: 250%;
+    left: 15%;
+    bottom: 32%;
+    text-decoration:overline;
+}
+.corp {
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.76);
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1%;
+    margin: 0.8%;
+    align-content: center;
+    flex-wrap: nowrap;
+    
+}
+.corp .sect1 {
+    background-color: rgb(34, 33, 33);
+    width: 97%;
+    margin-top: 5%;
+    border-radius: 50px;
+}
+.corp .sect2 { 
+    background-color:rgb(34, 33, 33);
+    width:97%;
+    margin-top: 5%;
+    border-radius: 50px;
+}
+.corp .sect3 { 
+    background-color: rgb(34, 33, 33);
+    width: 97%;
+    margin-top: 5%;
+    border-radius: 50px;
+}
+.corp .sect4 { 
+    background-color: rgb(34, 33, 33);
+    width: 97%;
+    margin-top: 5%;
+    border-radius: 50px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.float_r{
+    width: 100%;
+    float: right;
+    border-radius: 30px;
+
+}
+.cadre{
+    width: 85%;
+    float: right;
+    border-radius: 50px;
+    padding: 2%;
+}
+.float_l{
+    width:100%;
+    float: left;
+    border-radius: 30px;
+
+}
+.float_t{
+    width:100%;
+    float: top;
+    border-radius: 50px;
+
+}
+.corp span{
+    font-size: 200%;
+    line-height: 100%;
+}
+.sect{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+.sect2 h3{
+    text-align: center;
+    color: bisque;  
+    font-size: 150%;
+}
+.sect1 h4{
+    width: 100%;
+    color:bisque;
+    font-size: 150%;
+    text-align: justify;
+}
+.sect3 h4{
+    width: 100%;
+    color:bisque;
+    font-size:150%;
+    text-align: justify;
+}
+.sect4{ 
+    display: flex;
+    width: 100%;
+    height: 28%;
+    align-content: center;
+    justify-items: center;
+    padding: 1%;
+}
+.sect4 .cart { 
+    margin-left: 10.5%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.img{
+    height: 75%;
+}
+.img1,.img2 {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    float: top;
+    margin: 2.5%;
+    margin-left: 1%;
+    padding: 1%;
+    border: 1px solid bisque;
+}
+
+.btn{
+    position: relative;
+    top: -10%;
+    left: -5%;
+}
+.btn button{
+    width:  150px;
+    height: 100%;
+    margin-left: 0.1%;
+    border: none;
+    background-color: lightsalmon; 
+    font-size: 20px;
+    border-radius: 5px;
+}
+.btn button a{
+    text-decoration: none;
+    margin-left: 0.1%;
+    color: white;
+}
+.btn button a:hover{
+text-decoration: underline;
+color: white;
+}
+
+.scaled{
+    opacity: calc(70/100);
+    transition: 1s;
+    
+    
+}
+.scaled:hover{
+    transform: scale(1.03);
+    opacity: calc(100/100);
+    transition: 1s;
+    
+}
+.foot{
+    position: relative;
+    height: 100%;
+    background-color: white;
+    width: 101.6%;
+    margin: 1%;
+    padding: 1%;
+}
+.foot a {
+    text-decoration: none;
+    color: lightsalmon;
+}
+.foot li {
+    list-style: none;
+    position: relative;
+    top: 10px;
+}
+.foot .ul{
+    display: flex;
+}
+.foot .ul1{
+    flex-direction: column;
+    margin: 1%;
+}
+.foot .ul2{
+    position: relative;
+    left: 5%;
+    bottom: -10px;
+    flex-direction: row;
+    padding: 1%;
+    margin: 1%;
+}
+.foot button{
+
+    margin: 0.5%;
+}
+/********************MENU****************/
+.corps_e{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.76);
+    left: 1.5%;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2%;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+.card-e{
+    position:relative;
+    width: 100%;
+    background-color: rgb(34, 33, 33);
+    margin-right: 2%;
+    margin: 2%;
+    margin-left: 5%;
+    left: 1%;
+    padding: 1%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.entree{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.resistance{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.dessert{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.bistrot{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.boisson{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.card_e p{
+    position: relative;
+    top: 50%;
+    padding: 1%;
+
+}
+.img_e{
+    width: 95%;
+    border-radius: 50px 0 50px 0;
+    padding: 5%;
+}
+.txt{
+    position: relative;
+    color: white;
+    padding: 1%;
+}
+.prix{
+    position: absolute;
+    width: 42px;
+    background-color: red;
+    color: white;
+    left: 85%;
+    top: 20%;
+    font-size: 90%;
+}
+.btn_e{
+    margin: 1%;
+    padding: 1%;
+}
+
+.btnn{
+    width: 108px;
+    border: none;
+    background-color: lightsalmon;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 20px;
+}
+.btnn:hover{
+    text-decoration: underline;
+}
+.txt_e{
+    position: relative;
+    top: 15%;
+    text-decoration: none;
+    color: white;
+    font-size: 500%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1%;
+}
+.txt_e:hover{
+    color: white;
+
+}
+/*--------------------------*/
+.pan{
+    position: absolute;
+    z-index: 6;
+}
+.panier i
+{
+    font-size: 25px;
+}
+
+.panier{
+   background-color:lightsalmon;
+   width: 70px;
+   height: 70px;
+   border-radius: 100%;
+   position:fixed;
+   right: 20px;
+   top:30%;
+   transform: translateY(-50%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color:#fff;
+}
+.lpanier{
+   background-color:lightsalmon;
+   width: 70px;
+   height: 70px;
+   border-radius: 100%;
+   position:fixed;
+   right: 20px;
+   top:60%;
+   transform: translateY(-50%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color:#fff;
+}
+.lpanier i
+.panier span
+{
+    font-weight: bold;
+}
+/*-----------------------------------------------------*/
+.divc{
+    padding: 1%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+
+}
+.formc{
+    position: relative;
+    top: 50px;
+    background-color: rgba(0, 0, 0, 0.753);
+    border-radius: 30px;
+    width: 400Px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.formc fieldset{
+    padding: 1.5%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+}
+.formc legend{
+    text-align: center;
+    font-size: 30px;
+}
+.inom{
+    width: 300px;
+ margin: 5px;
+}
+.imail{
+    width: 300px;
+ margin: 5px;
+}
+.icomt{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+.btnc{
+    position: relative;
+    left: 30%;
+    bottom: 6px;
+    border: 1px solid black;
+    background-color: lightsalmon;
+    color: rgb(255, 255, 255);
+    width: 100px;
+}
+.mrci{
+    position: relative;
+    top: 35px;
+    text-decoration: none;
+    color:beige;
+    font-size: 40px;
+}.mrci:hover{
+    color: chartreuse;
+}
