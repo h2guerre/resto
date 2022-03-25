@@ -68,6 +68,15 @@
             {
                 $cat=secure($_POST['categorie']);            
             }
+            if(empty($_POST['desc']))
+            {
+                $array['err_desc']='Pas de description <br/>';
+                $err++;
+            }
+            else
+            {
+                $desc=secure($_POST['desc']);            
+            }
 
         
             if(isset($_FILES['file']) && $_FILES['file']['error']==0)
@@ -125,7 +134,7 @@
                         {
                             $ins='INSERT INTO produit(nomProd,descriProd,prixProd,catProd,photoProd) VALUES(?,?,?,?,?)';
                             $req=$db->prepare($ins);
-                            $req->execute([$nomp,$qte,$prix,$cat,$filename]);
+                            $req->execute([$nomp,$desc,$prix,$cat,$filename]);
                             $array['msg']='Le produit a ete ajouter';
                             $array['err_bool']=false;
                             $array['err']=false;

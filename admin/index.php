@@ -72,6 +72,7 @@
                                                 <div class="col-md-6">
                                                     <label for="qt" class="form-label">Description du produit :</label>
                                                     <input type="text"  name="desc" id="qt" class='form-control inpt'>
+                                                    <p class="err err_desc"></p>
                                                    
                                                 </div>
                                                 <div class="col-md-6">
