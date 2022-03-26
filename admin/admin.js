@@ -177,7 +177,7 @@ form_up.addEventListener('submit',async(e)=>{
                            
                            console.log(success)
                            success.style.color='green'
-                           success.innerHTML='Le produit a bien ete modifier'
+                           success.innerHTML='Bien exécuté'
                            inpts.forEach((input)=>{
                               input.value='';
                            })

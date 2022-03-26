@@ -91,7 +91,7 @@
                 }
                 else
                 {
-                    $allow_ext=['jpg','png','PNG','JPG','jpeg','JPEG'];
+                    $allow_ext=['jpg','png','PNG','JPG','jpeg','JPEG','webp','WEBP'];
                     $extension=pathinfo($filename);
                     $extension=$extension['extension'];
                     if(!in_array($extension,$allow_ext))

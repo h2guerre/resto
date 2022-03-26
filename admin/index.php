@@ -38,7 +38,7 @@
                                     <ul>
                                         <li><a href="#list" class='active' >Lister</a></li>
                                         <li><a href="#add" class=''>Ajouter &nbsp; <i class="fas fa-plus"></i></a></li>
-                                        <li><a href="#up">Modifier&nbsp; <i class="fas fa-retweet"></i></a></li>
+                                        <li style="display: none;"><a href="#up">Modifier&nbsp; <i class="fas fa-retweet"></i></a></li>
                                         <li><a href="#">
                                             <form action="" method="post" class='form_s'>
                                                 <input type="text" name="q" id="" class='form-control'>
